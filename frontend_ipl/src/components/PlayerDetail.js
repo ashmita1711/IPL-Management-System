@@ -252,7 +252,6 @@ const PlayerDetail = () => {
                 {playerPerformances.map((performance, index) => {
                   const matchInfo = getMatchInfo(performance.id.matchId);
 
-                  // error nhi ja rha 
                   const strikeRate = performance.balls_faced > 0 ? 
                     ((performance.runs_scored / performance.balls_faced) * 100).toFixed(2) : 'N/A';
                   const economy = performance.overs_bowled > 0 ? 
