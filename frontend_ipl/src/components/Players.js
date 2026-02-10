@@ -32,10 +32,10 @@ const Players = () => {
     fetchData();
   }, []);
 
-  const getTeamName = (teamId) => {
-    const team = teams.find(t => t.teamId === teamId);
-    return team ? team.name : `Team ${teamId}`;
-  };
+  // const getTeamName = (teamId) => {
+  //   const team = teams.find(t => t.teamId === teamId);
+  //   return team ? team.name : `Team ${teamId}`;
+  // };
 
   const getPlayerRoleClass = (role) => {
     switch (role?.toLowerCase()) {
@@ -120,7 +120,7 @@ const filteredPlayers = players.filter(player => {
             <div className="card-content">
               <div className="detail-item">
                 <span className="detail-label">Role:</span>
-                <span className={getPlayerRoleClass(player.role)}>
+                <span className={getPlayerRoleClass(player.roleOfPlayer)}>
                   {player.role || 'N/A'}
                 </span>
               </div>

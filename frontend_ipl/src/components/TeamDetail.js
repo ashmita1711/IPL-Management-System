@@ -68,9 +68,9 @@ const TeamDetail = () => {
     }
   };
 
-  const getOpponentTeamId = (match) => {
-    return match.team1Id === parseInt(teamId) ? match.team2?.teamId : match.team1?.teamId;
-  };
+  // const getOpponentTeamId = (match) => {
+  //   return match.team1Id === parseInt(teamId) ? match.team2?.teamId : match.team1?.teamId;
+  // };
 
   const getPlayerRoleClass = (role) => {
     switch (role?.toLowerCase()) {
