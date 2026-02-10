@@ -4,7 +4,7 @@ import { apiService } from '../api';
 
 const Players = () => {
   const [players, setPlayers] = useState([]);
-  const [teams, setTeams] = useState([]);
+  const [, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
